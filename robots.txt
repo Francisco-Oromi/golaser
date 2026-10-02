@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://golaser-guaxupe.vercel.app/sitemap.xml
+Sitemap: https://golaser-oromi-s-projects.vercel.app/sitemap.xml
