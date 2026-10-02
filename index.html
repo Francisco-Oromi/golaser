@@ -11,7 +11,7 @@
   gtag('js', new Date());
   gtag('config', 'AW-18488241903');
   // Rótulo da conversão "Contato WhatsApp" (preenchido após criar a ação de conversão)
-  window.GOLASER_WA_SENDTO = '';
+  window.GOLASER_WA_SENDTO = 'AW-18488241903/4SCUCMe9tY4dEO_d8O9E';
 </script>
 <meta name="description" content="Go Laser — Tecnologia que Transforma. Estética avançada de alto padrão: depilação a laser, laser fracionado de CO2, rejuvenescimento e harmonização facial e corporal." />
 <title>Go Laser | Tecnologia que Transforma</title>
@@ -575,7 +575,7 @@ h2{text-wrap:balance;}
   document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
     a.addEventListener('click', function(){
       if(window.GOLASER_WA_SENDTO && typeof gtag === 'function'){
-        gtag('event', 'conversion', {'send_to': window.GOLASER_WA_SENDTO});
+        gtag('event', 'conversion', {'send_to': window.GOLASER_WA_SENDTO, 'value': 1.0, 'currency': 'BRL'});
       }
     });
   });
