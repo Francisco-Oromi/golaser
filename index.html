@@ -3,6 +3,16 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18488241903"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18488241903');
+  // Rótulo da conversão "Contato WhatsApp" (preenchido após criar a ação de conversão)
+  window.GOLASER_WA_SENDTO = '';
+</script>
 <meta name="description" content="Go Laser — Tecnologia que Transforma. Estética avançada de alto padrão: depilação a laser, laser fracionado de CO2, rejuvenescimento e harmonização facial e corporal." />
 <title>Go Laser | Tecnologia que Transforma</title>
 <meta name="robots" content="index, follow" />
@@ -560,6 +570,15 @@ h2{text-wrap:balance;}
   nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
 
   document.querySelectorAll('img').forEach(function(img){ img.addEventListener('error', function(){ img.style.display='none'; }); });
+
+  // Conversão Google Ads: clique em qualquer botão de WhatsApp
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      if(window.GOLASER_WA_SENDTO && typeof gtag === 'function'){
+        gtag('event', 'conversion', {'send_to': window.GOLASER_WA_SENDTO});
+      }
+    });
+  });
 
   var reveals = document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
