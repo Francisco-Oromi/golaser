@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Go Laser — Tecnologia que Transforma. Estética avançada de alto padrão: depilação a laser, laser fracionado de CO2, rejuvenescimento e harmonização facial e corporal." />
+<title>Go Laser | Tecnologia que Transforma</title>
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#523750" />
+<link rel="canonical" href="https://golaser.vercel.app/" />
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon" href="img/favicon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Go Laser" />
+<meta property="og:title" content="Go Laser — Tecnologia que Transforma" />
+<meta property="og:description" content="Estética avançada de alto padrão: depilação a laser, laser fracionado de CO2, rejuvenescimento e harmonização facial e corporal." />
+<meta property="og:url" content="https://golaser.vercel.app/" />
+<meta property="og:image" content="https://golaser.vercel.app/img/hero.jpg" />
+<meta property="og:image:width" content="1920" />
+<meta property="og:image:height" content="1280" />
+<meta property="og:locale" content="pt_BR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Go Laser — Tecnologia que Transforma" />
+<meta name="twitter:description" content="Estética avançada de alto padrão em ambiente premium." />
+<meta name="twitter:image" content="https://golaser.vercel.app/img/hero.jpg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BeautySalon","name":"Go Laser","description":"Clínica de estética avançada: depilação a laser, laser fracionado de CO2, rejuvenescimento e harmonização facial e corporal.","image":"https://golaser.vercel.app/img/hero.jpg","url":"https://golaser.vercel.app/","telephone":"+553591133808","slogan":"Tecnologia que Transforma","priceRange":"$$"}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   GO LASER — Landing Page
+   Identidade oficial (Manual da Marca):
+   Lavanda #C4A6CB · Bege #E5D5C3 · Roxo Profundo #523750 · Dourado Champagne #D5B47C
+   Tipografia: Montserrat (Medium + Semibold)
+   ============================================================ */
+:root{
+  --roxo:#523750;
+  --roxo-deep:#3b2739;
+  --roxo-2:#6c4a68;
+  --lavanda:#C4A6CB;
+  --lavanda-soft:#EFE6F1;
+  --bege:#E5D5C3;
+  --bege-soft:#F4EADF;
+  --cream:#FBF7F2;
+  --dourado:#D5B47C;
+  --dourado-2:#E4C88E;
+  --dourado-deep:#B08E52;
+  --ink:#3f313b;
+  --muted:#8b7d87;
+  --line:rgba(82,55,80,.12);
+  --white:#ffffff;
+  --radius:20px;
+  --max:1180px;
+  --sans:'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  --grad-gold:linear-gradient(135deg,#E4C88E 0%,#D5B47C 55%,#C1A165 100%);
+  --shadow:0 20px 55px rgba(59,39,57,.16);
+  --shadow-soft:0 12px 32px rgba(59,39,57,.09);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.65;overflow-x:hidden;font-weight:400;}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+h1,h2,h3,h4{font-family:var(--sans);font-weight:700;line-height:1.16;color:var(--roxo);letter-spacing:-.01em;}
+h2{text-wrap:balance;}
+.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px;}
+
+.eyebrow{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--dourado-deep);display:inline-flex;align-items:center;gap:12px;}
+.eyebrow::before{content:"";width:30px;height:1px;background:var(--dourado);display:inline-block;}
+.eyebrow.center{justify-content:center;}
+.eyebrow.center::after{content:"";width:30px;height:1px;background:var(--dourado);display:inline-block;}
+.eyebrow.light{color:var(--dourado-2);}
+.eyebrow.light::before,.eyebrow.light.center::after{background:var(--dourado-2);}
+
+/* ---- Botões ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--sans);font-weight:600;font-size:.95rem;letter-spacing:.02em;padding:16px 34px;border-radius:60px;cursor:pointer;border:none;transition:transform .25s ease, box-shadow .25s ease, background .3s ease;text-align:center;line-height:1.2;}
+.btn-gold{background:var(--grad-gold);color:var(--roxo-deep);box-shadow:0 12px 26px rgba(213,180,124,.42);}
+.btn-gold:hover{background:var(--dourado-2);transform:translateY(-3px);box-shadow:0 16px 34px rgba(228,200,142,.6);}
+.btn-gold svg{width:18px;height:18px;}
+.btn-sm{padding:11px 24px;font-size:.85rem;}
+
+/* ---- Logo ---- */
+.brand-word{color:#F5ECEF;}
+.footer-word{color:#F5ECEF;}
+
+/* ============================================================ HEADER */
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:13px 0;transition:background .35s ease, box-shadow .35s ease, padding .35s ease;background:linear-gradient(to bottom, rgba(59,39,57,.55), rgba(59,39,57,0));}
+.site-header.scrolled{background:rgba(59,39,57,.97);box-shadow:0 8px 30px rgba(0,0,0,.3);padding:8px 0;backdrop-filter:blur(8px);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.brand{display:flex;align-items:center;}
+.brand .brand-word{height:38px;width:auto;transition:height .35s ease;filter:drop-shadow(0 3px 8px rgba(0,0,0,.3));}
+.site-header.scrolled .brand .brand-word{height:34px;}
+.nav-desktop{display:none;align-items:center;gap:28px;}
+.nav-desktop a{color:rgba(255,255,255,.88);font-size:.85rem;font-weight:500;letter-spacing:.03em;position:relative;transition:color .25s;}
+.nav-desktop a:hover{color:var(--dourado-2);}
+.nav-desktop a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1.5px;background:var(--dourado);transition:width .3s;}
+.nav-desktop a:hover::after{width:100%;}
+.header-actions{display:flex;align-items:center;gap:12px;}
+.menu-toggle{display:inline-flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+.menu-toggle span{width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s;}
+.mobile-nav{position:fixed;top:0;right:0;height:100vh;width:82%;max-width:330px;z-index:1200;background:linear-gradient(160deg,var(--roxo),var(--roxo-deep));transform:translateX(100%);transition:transform .4s cubic-bezier(.7,0,.2,1);padding:90px 32px 40px;display:flex;flex-direction:column;gap:6px;box-shadow:-20px 0 60px rgba(0,0,0,.5);}
+.mobile-nav.open{transform:translateX(0);}
+.mobile-nav a{color:rgba(255,255,255,.92);font-size:1.05rem;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.1);letter-spacing:.03em;}
+.mobile-nav a:last-of-type{border-bottom:none;}
+.mobile-nav .btn{margin-top:20px;}
+.mobile-close{position:absolute;top:22px;right:24px;background:none;border:none;color:#fff;font-size:1.9rem;cursor:pointer;line-height:1;}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1100;opacity:0;visibility:hidden;transition:.35s;}
+.overlay.show{opacity:1;visibility:visible;}
+
+/* ============================================================ HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;background:var(--roxo-deep);padding:128px 0 76px;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;z-index:0;}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg, rgba(59,39,57,.95) 0%, rgba(82,55,80,.86) 42%, rgba(82,55,80,.5) 72%, rgba(82,55,80,.28) 100%);}
+.hero::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:140px;background:linear-gradient(to top, var(--cream), transparent);z-index:2;}
+.hero-content{position:relative;z-index:3;max-width:640px;}
+.hero .eyebrow{margin-bottom:22px;}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5.6vw,3.9rem);line-height:1.1;margin-bottom:22px;font-weight:700;text-shadow:0 4px 30px rgba(0,0,0,.35);}
+.hero h1 .accent{color:var(--dourado-2);}
+.hero p.sub{color:rgba(255,255,255,.92);font-size:clamp(1rem,2vw,1.16rem);font-weight:300;max-width:560px;margin-bottom:36px;line-height:1.7;}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;}
+.hero-note{color:rgba(255,255,255,.78);font-size:.8rem;display:flex;align-items:center;gap:8px;}
+.hero-note svg{width:15px;height:15px;fill:var(--dourado-2);}
+
+/* ============================================================ SEÇÕES */
+.section{padding:84px 0;}
+.section-head{max-width:720px;margin:0 auto 54px;text-align:center;}
+.section-head .eyebrow{margin-bottom:18px;}
+.section-head h2{font-size:clamp(1.9rem,4.2vw,2.8rem);margin-bottom:16px;}
+.section-head p{color:var(--muted);font-size:1.02rem;font-weight:400;}
+
+/* ---- Especialidades ---- */
+.especialidades{background:var(--cream);}
+.spec{display:grid;grid-template-columns:1fr;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);margin-bottom:42px;border:1px solid var(--line);}
+.spec:last-child{margin-bottom:0;}
+.spec-media{position:relative;min-height:320px;background:linear-gradient(135deg,var(--roxo-2),var(--roxo-deep));}
+.spec-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.spec-media.tall{min-height:0;aspect-ratio:3/4;}
+.spec-media.tall img{object-position:50% 16%;}
+.spec-media .tag{position:absolute;bottom:20px;left:20px;z-index:2;background:rgba(59,39,57,.74);backdrop-filter:blur(4px);color:var(--dourado-2);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:8px 16px;border-radius:40px;border:1px solid rgba(213,180,124,.4);}
+.spec-body{padding:38px 30px;}
+.spec-body h3{font-size:1.55rem;margin-bottom:14px;font-weight:700;}
+.spec-body h3 span{display:block;font-size:.72rem;letter-spacing:.22em;color:var(--dourado-deep);text-transform:uppercase;font-weight:600;margin-bottom:12px;}
+.spec-body p{color:var(--muted);margin-bottom:22px;font-size:.98rem;}
+.spec-benefits{margin-bottom:28px;}
+.spec-benefits li{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px;font-size:.94rem;color:var(--ink);}
+.check{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(213,180,124,.2);display:grid;place-items:center;margin-top:2px;}
+.check svg{width:12px;height:12px;stroke:var(--dourado-deep);stroke-width:2.6;fill:none;}
+
+/* ---- Procedimentos (accordion por tópicos) ---- */
+.procedimentos{background:linear-gradient(180deg,var(--lavanda-soft),var(--cream));}
+.proc-group{max-width:840px;margin:0 auto 34px;}
+.proc-group:last-of-type{margin-bottom:0;}
+.proc-group-label{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.proc-group-label .eyebrow{margin:0;}
+.proc-list{display:flex;flex-direction:column;gap:12px;}
+.proc-item{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-soft);}
+.proc-item summary{list-style:none;cursor:pointer;padding:17px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;font-weight:600;color:var(--roxo);font-size:1rem;transition:color .2s;}
+.proc-item summary::-webkit-details-marker{display:none;}
+.proc-item summary:hover{color:var(--dourado-deep);}
+.proc-plus{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(213,180,124,.18);display:grid;place-items:center;position:relative;transition:transform .3s ease, background .3s ease;}
+.proc-plus::before,.proc-plus::after{content:"";position:absolute;background:var(--dourado-deep);border-radius:2px;}
+.proc-plus::before{width:11px;height:2px;}
+.proc-plus::after{width:2px;height:11px;}
+.proc-item[open] .proc-plus{transform:rotate(45deg);background:var(--dourado);}
+.proc-item[open] .proc-plus::before,.proc-item[open] .proc-plus::after{background:#fff;}
+.proc-body{padding:0 20px 20px;color:var(--muted);font-size:.93rem;line-height:1.65;}
+.proc-cta{text-align:center;margin-top:40px;}
+
+/* ---- Tecnologia ---- */
+.tecnologia{background:var(--bege);}
+.tec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.tec-card{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:linear-gradient(135deg,var(--roxo-2),var(--roxo-deep));box-shadow:var(--shadow-soft);}
+.tec-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.tec-card:hover img{transform:scale(1.07);}
+.tec-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(59,39,57,.88) 0%, rgba(59,39,57,.1) 55%, transparent 100%);}
+.tec-cap{position:absolute;left:0;bottom:0;z-index:2;padding:16px;}
+.tec-cap h4{color:#fff;font-weight:600;font-size:.9rem;letter-spacing:.02em;}
+.tec-cap span{display:block;color:var(--dourado-2);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px;font-weight:600;}
+
+/* ---- Equipe ---- */
+.equipe{background:linear-gradient(160deg,var(--roxo) 0%,var(--roxo-deep) 100%);}
+.equipe .section-head h2{color:#fff;}
+.equipe .section-head p{color:rgba(255,255,255,.75);}
+.equipe-feature{display:grid;grid-template-columns:1fr;gap:26px;align-items:center;margin-bottom:56px;}
+.equipe-photo{border-radius:var(--radius);overflow:hidden;box-shadow:0 22px 50px rgba(0,0,0,.4);border:1px solid rgba(213,180,124,.18);aspect-ratio:4/5;background:var(--roxo-2);}
+.equipe-photo img{width:100%;height:100%;object-fit:cover;}
+.equipe-feature-text h3{color:#fff;font-size:clamp(1.5rem,3.5vw,2.2rem);margin-bottom:16px;}
+.equipe-feature-text p{color:rgba(255,255,255,.84);margin-bottom:16px;font-size:1rem;}
+.equipe-mini{display:flex;flex-direction:column;gap:12px;margin-top:22px;}
+.equipe-mini li{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.9);font-size:.95rem;}
+.equipe-mini .check{background:rgba(213,180,124,.24);}
+.equipe-mini .check svg{stroke:var(--dourado-2);}
+
+/* Profissionais */
+.pro-subhead{text-align:center;margin-bottom:34px;}
+.pro-subhead h3{color:#fff;font-size:clamp(1.4rem,3vw,1.9rem);}
+.pro-subhead p{color:rgba(255,255,255,.72);font-size:.98rem;margin-top:8px;}
+.pro-grid{display:grid;grid-template-columns:1fr;gap:20px;}
+.pro-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.28);display:flex;flex-direction:column;}
+.pro-photo{position:relative;aspect-ratio:4/5;background:linear-gradient(135deg,var(--lavanda),var(--roxo-2));overflow:hidden;}
+.pro-photo img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s ease;}
+.pro-card:hover .pro-photo img{transform:scale(1.06);}
+.pro-info{padding:20px 20px 24px;}
+.pro-info h4{color:var(--roxo);font-size:1.12rem;font-weight:700;margin-bottom:4px;}
+.pro-role{display:inline-block;color:var(--dourado-deep);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:12px;}
+.pro-info p{color:var(--muted);font-size:.9rem;line-height:1.6;}
+
+/* ---- Espaço ---- */
+.espaco{background:var(--cream);}
+.espaco-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:20px;}
+.espaco-photo{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,var(--roxo-2),var(--roxo-deep));box-shadow:var(--shadow-soft);}
+.espaco-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s ease;}
+.espaco-photo:hover img{transform:scale(1.05);}
+.espaco-photo .cap{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:22px 20px 16px;color:#fff;font-weight:600;font-size:1.02rem;background:linear-gradient(to top,rgba(59,39,57,.85),transparent);}
+.cta-band{display:grid;grid-template-columns:1fr;background:linear-gradient(120deg,var(--roxo),var(--roxo-2));border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-top:36px;}
+.cta-band-img{position:relative;min-height:280px;background:var(--roxo-2);}
+.cta-band-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;}
+.cta-band-text{padding:48px 32px;text-align:center;color:#fff;}
+.cta-band-text h3{color:#fff;font-size:clamp(1.5rem,3.5vw,2.2rem);margin-bottom:14px;}
+.cta-band-text p{color:rgba(255,255,255,.86);max-width:460px;margin:0 auto 28px;}
+
+/* ============================================================ FOOTER */
+.site-footer{background:var(--roxo-deep);color:rgba(255,255,255,.7);padding:56px 0 30px;text-align:center;}
+.footer-word{height:56px;width:auto;margin:0 auto 22px;filter:drop-shadow(0 6px 16px rgba(0,0,0,.5));}
+.footer-slogan{font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--dourado-2);margin-bottom:24px;font-weight:600;}
+.footer-divider{width:60px;height:1px;background:var(--dourado);margin:0 auto 24px;opacity:.6;}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.7;}
+
+/* ============================================================ WHATSAPP */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:1500;display:flex;align-items:center;background:#25D366;color:#fff;border-radius:60px;box-shadow:0 10px 30px rgba(37,211,102,.45);overflow:hidden;transition:transform .3s ease, box-shadow .3s ease;animation:waPulse 2.6s infinite;}
+.wa-float:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 14px 38px rgba(37,211,102,.6);}
+.wa-icon{width:58px;height:58px;flex-shrink:0;display:grid;place-items:center;}
+.wa-icon svg{width:32px;height:32px;fill:#fff;}
+.wa-label{font-weight:600;font-size:.9rem;white-space:nowrap;max-width:0;overflow:hidden;transition:max-width .4s ease, padding .4s ease;padding:0;}
+.wa-float:hover .wa-label{max-width:180px;padding-right:22px;}
+@keyframes waPulse{0%{box-shadow:0 10px 30px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.5);}70%{box-shadow:0 10px 30px rgba(37,211,102,.45),0 0 0 16px rgba(37,211,102,0);}100%{box-shadow:0 10px 30px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,0);}}
+
+/* ============================================================ REVEAL */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease, transform .8s ease;}
+.js .reveal.visible{opacity:1;transform:none;}
+.js .reveal.d1{transition-delay:.1s;}
+.js .reveal.d2{transition-delay:.2s;}
+.js .reveal.d3{transition-delay:.3s;}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1!important;transform:none!important;}html{scroll-behavior:auto;}.wa-float{animation:none;}}
+
+/* ============================================================ RESPONSIVO */
+@media(min-width:600px){
+  .tec-grid{grid-template-columns:repeat(4,1fr);}
+  .pro-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(min-width:1000px){
+  .pro-grid{grid-template-columns:repeat(5,1fr);gap:18px;}
+}
+@media(min-width:900px){
+  .container{padding:0 32px;}
+  .hero{padding:140px 0 90px;}
+  .nav-desktop{display:flex;}
+  .menu-toggle{display:none;}
+  .section{padding:108px 0;}
+  .spec{grid-template-columns:1fr 1fr;align-items:stretch;}
+  .spec-media{min-height:100%;}
+  .spec-body{padding:52px 50px;align-self:center;}
+  .spec.reverse .spec-media{order:2;}
+  .spec.reverse .spec-body{order:1;}
+  .spec-media.tall{aspect-ratio:auto;min-height:100%;}
+  .spec-media.tall img{object-position:50% 22%;}
+  .equipe-feature{grid-template-columns:0.9fr 1.1fr;gap:40px;}
+  .espaco-gallery{grid-template-columns:repeat(4,1fr);}
+  .cta-band{grid-template-columns:1fr 1fr;align-items:stretch;}
+  .cta-band-text{padding:56px 48px;}
+}
+@media(min-width:1100px){.spec-body{padding:58px 56px;}}
+</style>
+</head>
+<body>
+
+<!-- ===================== LOGO (definições SVG) ===================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="goldStar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E9CF95"/>
+      <stop offset="55%" stop-color="#D5B47C"/>
+      <stop offset="100%" stop-color="#BE9C60"/>
+    </linearGradient>
+    <symbol id="goWord" viewBox="0 0 360 74">
+      <text x="112" y="50" text-anchor="end" font-family="'Montserrat',sans-serif" font-weight="400" font-size="44" letter-spacing="3" fill="currentColor">GO</text>
+      <path d="M138 16 L142.5 33.5 L156 38 L142.5 42.5 L138 60 L133.5 42.5 L120 38 L133.5 33.5 Z" fill="url(#goldStar)"/>
+      <text x="164" y="50" text-anchor="start" font-family="'Montserrat',sans-serif" font-weight="400" font-size="44" letter-spacing="3" fill="currentColor">LASER</text>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#topo" class="brand" aria-label="Go Laser — início">
+      <img class="brand-word" src="img/logo-word-light.png" alt="Go Laser" />
+    </a>
+    <nav class="nav-desktop" aria-label="Menu principal">
+      <a href="#especialidades">Especialidades</a>
+      <a href="#procedimentos">Procedimentos</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#espaco">Nosso Espaço</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://wa.me/553591133808" class="btn btn-gold btn-sm" target="_blank" rel="noopener">Agendar</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+  <button class="mobile-close" id="mobileClose" aria-label="Fechar menu">&times;</button>
+  <a href="#especialidades">Especialidades</a>
+  <a href="#procedimentos">Procedimentos</a>
+  <a href="#equipe">Nossa Equipe</a>
+  <a href="#espaco">Nosso Espaço</a>
+  <a href="https://wa.me/553591133808" class="btn btn-gold" target="_blank" rel="noopener">Agendar agora</a>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="topo">
+  <div class="hero-bg"><img src="img/hero.jpg" alt="Recepção da clínica Go Laser" /></div>
+  <div class="container hero-content">
+    <span class="eyebrow light">Estética Avançada de Alto Padrão</span>
+    <h1>Sua Pele Renovada com a <span class="accent">Melhor Tecnologia</span></h1>
+    <p class="sub">A Go Laser oferece o padrão ouro em estética avançada. Descubra tratamentos modernos, confortáveis e altamente eficazes para realçar a sua beleza natural.</p>
+    <div class="hero-cta-row">
+      <a href="https://wa.me/553591133808" class="btn btn-gold" target="_blank" rel="noopener">
+        Clique abaixo para agendar
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="hero-note">
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21l2.3-7.4-6-4.6h7.6z"/></svg>
+        Atendimento premium e personalizado
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ESPECIALIDADES ===================== -->
+<section class="section especialidades" id="especialidades">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow center">Nossas Especialidades</span>
+      <h2>Tratamentos que Realçam a Sua Beleza</h2>
+      <p>Protocolos completos de estética avançada, do cuidado facial à harmonização corporal, com foco em resultados reais e experiência de alto padrão.</p>
+    </div>
+
+    <article class="spec reveal">
+      <div class="spec-media tall"><span class="tag">Depilação a Laser</span><img src="img/esp-epilacao.jpg" alt="Depilação a laser na Go Laser" loading="lazy" /></div>
+      <div class="spec-body">
+        <h3><span>Epilação a Laser</span>Chega de pelos indesejados</h3>
+        <p>Tratamento moderno e eficaz que reduz os pelos de forma progressiva e duradoura, cuidando da sua pele com segurança, higiene e conforto.</p>
+        <ul class="spec-benefits">
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Fim da foliculite e dos pelos encravados</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Clareamento e uniformização da pele</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Redução progressiva e duradoura dos pelos</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Mais praticidade e liberdade no dia a dia</li>
+        </ul>
+        <a href="https://wa.me/553591133808" class="btn btn-gold" target="_blank" rel="noopener">Quero agendar minha avaliação</a>
+      </div>
+    </article>
+
+    <article class="spec reverse reveal">
+      <div class="spec-media tall"><span class="tag">Rejuvenescimento</span><img src="img/esp-co2.jpg" alt="Laser fracionado de CO2 na Go Laser" loading="lazy" /></div>
+      <div class="spec-body">
+        <h3><span>Laser Fracionado de CO2</span>Rejuvenescimento profundo e renovador</h3>
+        <p>O padrão ouro em renovação da pele. Estimula intensamente a produção de colágeno, suavizando manchas, cicatrizes de acne, linhas finas e devolvendo firmeza, viço e textura uniforme ao seu rosto.</p>
+        <ul class="spec-benefits">
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Estímulo profundo de colágeno</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Redução de manchas e melasma</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Atenuação de cicatrizes e poros dilatados</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Firmeza, viço e textura renovada</li>
+        </ul>
+        <a href="https://wa.me/553591133808" class="btn btn-gold" target="_blank" rel="noopener">Falar com nossa equipe</a>
+      </div>
+    </article>
+
+    <article class="spec reveal">
+      <div class="spec-media"><span class="tag">Facial &amp; Corporal</span><img src="img/esp-estetica.jpg" alt="Estética avançada e diagnóstico facial na Go Laser" loading="lazy" /></div>
+      <div class="spec-body">
+        <h3><span>Estética Avançada</span>Harmonização e resultados naturais</h3>
+        <p>Um cuidado completo do rosto ao corpo, com protocolos personalizados que valorizam suas características e entregam resultados naturais e harmônicos — do rejuvenescimento à modelagem corporal.</p>
+        <ul class="spec-benefits">
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Harmonização facial e preenchimentos</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Bioestimuladores e ultrassom microfocado</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Estética corporal, capilar e emagrecimento</li>
+        </ul>
+        <a href="#procedimentos" class="btn btn-gold">Ver todos os procedimentos</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== PROCEDIMENTOS ===================== -->
+<section class="section procedimentos" id="procedimentos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow center">Nossos Procedimentos</span>
+      <h2>Entenda cada tratamento</h2>
+      <p>Muita gente tem dúvidas sobre o que é cada procedimento. Reunimos tudo por tópicos para você entender antes mesmo de chegar. Toque para ver os detalhes.</p>
+    </div>
+
+    <div class="proc-group reveal">
+      <div class="proc-group-label"><span class="eyebrow">Estética Facial</span></div>
+      <div class="proc-list">
+        <details class="proc-item"><summary>Toxina Botulínica (Botox) <span class="proc-plus"></span></summary><div class="proc-body">Relaxa suavemente a musculatura para amenizar rugas e linhas de expressão na testa, ao redor dos olhos e entre as sobrancelhas, sempre com aspecto natural.</div></details>
+        <details class="proc-item"><summary>Preenchimento Nasogeniano e Labial <span class="proc-plus"></span></summary><div class="proc-body">Ácido hialurônico que suaviza os sulcos ao lado do nariz e da boca (o “bigode chinês”) e devolve volume, contorno e hidratação aos lábios.</div></details>
+        <details class="proc-item"><summary>Preenchimento de Códigos de Barras <span class="proc-plus"></span></summary><div class="proc-body">Ameniza as linhas verticais que surgem acima do lábio superior, deixando a região mais lisa, jovem e harmônica.</div></details>
+        <details class="proc-item"><summary>Preenchimento de Malar e Mandíbula <span class="proc-plus"></span></summary><div class="proc-body">Define e projeta as maçãs do rosto e o contorno da mandíbula, equilibrando os traços e valorizando o formato do rosto.</div></details>
+        <details class="proc-item"><summary>Bioestimulador de Colágeno <span class="proc-plus"></span></summary><div class="proc-body">Estimula a produção natural de colágeno, melhorando firmeza, flacidez e a qualidade da pele de forma gradual e duradoura.</div></details>
+        <details class="proc-item"><summary>Ultrassom Microfocado <span class="proc-plus"></span></summary><div class="proc-body">Lifting sem cortes: age nas camadas mais profundas da pele para firmar e dar efeito “lifting” ao rosto e ao pescoço.</div></details>
+        <details class="proc-item"><summary>Laser Fracionado de CO2 <span class="proc-plus"></span></summary><div class="proc-body">Renovação profunda da pele: reduz manchas, cicatrizes de acne e linhas finas, estimulando colágeno e devolvendo viço e uniformidade.</div></details>
+      </div>
+    </div>
+
+    <div class="proc-group reveal">
+      <div class="proc-group-label"><span class="eyebrow">Estética Corporal</span></div>
+      <div class="proc-list">
+        <details class="proc-item"><summary>Depilação a Laser <span class="proc-plus"></span></summary><div class="proc-body">Reduz os pelos de forma progressiva e duradoura, acabando com a foliculite e os pelos encravados e uniformizando a pele, com todo cuidado e higiene.</div></details>
+        <details class="proc-item"><summary>Preenchimento de Glúteos <span class="proc-plus"></span></summary><div class="proc-body">Realça o volume e melhora o contorno dos glúteos sem cirurgia, com resultado natural e proporcional ao seu corpo.</div></details>
+        <details class="proc-item"><summary>Estética Corporal e Emagrecimento <span class="proc-plus"></span></summary><div class="proc-body">Protocolos para redução de medidas, celulite e flacidez, apoiando um emagrecimento saudável e um corpo mais harmônico (linha GO SLIM).</div></details>
+      </div>
+    </div>
+
+    <div class="proc-group reveal">
+      <div class="proc-group-label"><span class="eyebrow">Terapia Capilar</span></div>
+      <div class="proc-list">
+        <details class="proc-item"><summary>Terapia Capilar <span class="proc-plus"></span></summary><div class="proc-body">Cuidados para a saúde do couro cabeludo e dos fios, combatendo a queda e estimulando o crescimento capilar (linha GO HAIR).</div></details>
+      </div>
+    </div>
+
+    <div class="proc-cta reveal">
+      <a href="https://wa.me/553591133808" class="btn btn-gold" target="_blank" rel="noopener">Tirar dúvidas e agendar avaliação</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TECNOLOGIA ===================== -->
+<section class="section tecnologia" id="tecnologia">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow center">Tecnologia de Ponta</span>
+      <h2>Equipamentos de Última Geração</h2>
+      <p>Investimos nas tecnologias mais modernas do mercado para entregar tratamentos mais seguros, confortáveis e eficazes — do laser à estética avançada.</p>
+    </div>
+    <div class="tec-grid">
+      <figure class="tec-card reveal"><img src="img/tec-1.jpg" alt="Tecnologia a laser Go Laser" loading="lazy" /><figcaption class="tec-cap"><span>Precisão</span><h4>Laser de Alta Performance</h4></figcaption></figure>
+      <figure class="tec-card reveal d1"><img src="img/tec-2.jpg" alt="Aparelho de estética avançada" loading="lazy" /><figcaption class="tec-cap"><span>Corporal</span><h4>Ultrassom &amp; Estética</h4></figcaption></figure>
+      <figure class="tec-card reveal d2"><img src="img/tec-3.jpg" alt="Painel digital de controle do equipamento" loading="lazy" /><figcaption class="tec-cap"><span>Controle</span><h4>Protocolos Personalizados</h4></figcaption></figure>
+      <figure class="tec-card reveal d3"><img src="img/tec-4.jpg" alt="Sala de tratamento equipada" loading="lazy" /><figcaption class="tec-cap"><span>Estrutura</span><h4>Salas Equipadas</h4></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EQUIPE ===================== -->
+<section class="section equipe" id="equipe">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow center light">Nossa Equipe Especializada</span>
+      <h2>Cuidado, Segurança e Excelência</h2>
+      <p>Profissionais dedicados e tecnologia de ponta trabalhando juntos para entregar a você uma experiência premium do início ao fim.</p>
+    </div>
+
+    <div class="equipe-feature reveal">
+      <div class="equipe-photo"><img src="img/equipe.jpg" alt="Equipe Go Laser" loading="lazy" /></div>
+      <div class="equipe-feature-text">
+        <h3>Uma equipe inteira dedicada a você</h3>
+        <p>Da recepção ao procedimento, cada detalhe é pensado para o seu conforto e para a sua segurança. Nossa equipe é treinada para oferecer um atendimento acolhedor, humano e verdadeiramente premium.</p>
+        <ul class="equipe-mini">
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Avaliação personalizada para cada cliente</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Protocolos seguros e acompanhamento próximo</li>
+          <li><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Ambiente sofisticado e acolhedor</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pro-subhead reveal">
+      <h3>Conheça as profissionais</h3>
+      <p>Quem vai cuidar de você com técnica, carinho e atenção em cada detalhe.</p>
+    </div>
+    <div class="pro-grid">
+      <article class="pro-card reveal"><div class="pro-photo"><img src="img/team-gislene.jpg" alt="Gislene Pimentel — Aplicadora de Laser" loading="lazy" /></div><div class="pro-info"><h4>Gislene Pimentel</h4><span class="pro-role">Aplicadora de Laser</span><p>Especialista em depilação a laser, conduz cada sessão com técnica e atenção para resultados seguros e progressivos.</p></div></article>
+      <article class="pro-card reveal d1"><div class="pro-photo"><img src="img/team-vanessa.jpg" alt="Vanessa — Gerente" loading="lazy" /></div><div class="pro-info"><h4>Vanessa</h4><span class="pro-role">Gerente</span><p>À frente da gestão da clínica, garante um atendimento acolhedor e uma experiência premium do início ao fim.</p></div></article>
+      <article class="pro-card reveal d2"><div class="pro-photo"><img src="img/team-kimberlly.jpg" alt="Kimberlly — Aplicadora de Laser" loading="lazy" /></div><div class="pro-info"><h4>Kimberlly</h4><span class="pro-role">Aplicadora de Laser</span><p>Dedicada à depilação a laser, cuida de cada protocolo com precisão, segurança e foco no seu conforto.</p></div></article>
+      <article class="pro-card reveal d3"><div class="pro-photo"><img src="img/team-keren.jpg" alt="Keren Barbosa — Biomédica" loading="lazy" /></div><div class="pro-info"><h4>Keren Barbosa</h4><span class="pro-role">Biomédica</span><p>Responsável pelos protocolos de estética avançada e rejuvenescimento, unindo conhecimento técnico e tecnologia de ponta.</p></div></article>
+      <article class="pro-card reveal"><div class="pro-photo"><img src="img/team-monique.jpg" alt="Monique — Aplicadora de Laser" loading="lazy" /></div><div class="pro-info"><h4>Monique</h4><span class="pro-role">Aplicadora de Laser</span><p>Dedicada à depilação a laser, realiza cada atendimento com técnica, cuidado e atenção total ao seu conforto.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ESPAÇO ===================== -->
+<section class="section espaco" id="espaco">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow center">Conheça Nosso Espaço</span>
+      <h2>Um Ambiente Feito para o Seu Bem-Estar</h2>
+      <p>Infraestrutura de ponta, ambiente acolhedor e cada detalhe pensado para que você viva uma experiência de conforto e sofisticação em todas as sessões.</p>
+    </div>
+
+    <div class="espaco-gallery reveal">
+      <div class="espaco-photo"><img src="img/espaco-fachada.jpg" alt="Fachada da Go Laser" loading="lazy" /><span class="cap">Nossa Fachada</span></div>
+      <div class="espaco-photo"><img src="img/espaco-recepcao.jpg" alt="Recepção da Go Laser" loading="lazy" /><span class="cap">Recepção &amp; Acolhimento</span></div>
+      <div class="espaco-photo"><img src="img/espaco-sala1.jpg" alt="Sala de tratamento da Go Laser" loading="lazy" /><span class="cap">Salas de Tratamento</span></div>
+      <div class="espaco-photo"><img src="img/espaco-sala2.jpg" alt="Sala de procedimentos da Go Laser" loading="lazy" /><span class="cap">Estrutura &amp; Conforto</span></div>
+    </div>
+
+    <div class="cta-band reveal">
+      <div class="cta-band-img"><img src="img/boas-vindas.jpg" alt="Boas-vindas à Go Laser" loading="lazy" /></div>
+      <div class="cta-band-text">
+        <h3>Pronta para transformar a sua pele?</h3>
+        <p>Agende agora a sua avaliação e descubra o tratamento ideal para você com quem entende de estética de alto padrão.</p>
+        <a href="https://wa.me/553591133808" class="btn btn-gold" target="_blank" rel="noopener">
+          Fale com nossa equipe
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <img class="footer-word" src="img/logo-light.png" alt="Go Laser — Tecnologia que Transforma" />
+    <div class="footer-divider"></div>
+    <p class="footer-copy">
+      &copy; 2026 Go Laser — Estética Avançada. Todos os direitos reservados.<br />
+      Tratamentos realizados por profissionais especializados. Resultados podem variar de acordo com cada organismo.
+    </p>
+  </div>
+</footer>
+
+<!-- ===================== WHATSAPP ===================== -->
+<a href="https://wa.me/553591133808" class="wa-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+  <span class="wa-icon"><svg viewBox="0 0 32 32"><path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.8L.4 31.6l8-2.1c2.3 1.2 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.3c-2.5 0-4.8-.7-6.8-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2-2-4.4-2-6.9C2.9 8.7 8.8 2.8 16 2.8S29.1 8.7 29.1 16 23.2 28.8 16 28.8zm7.2-9.6c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.2 0-.6.1-1 .5-.3.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 4 6.3 5.6.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg></span>
+  <span class="wa-label">Fale Conosco</span>
+</a>
+
+<script>
+  document.documentElement.classList.add('js');
+  var header = document.getElementById('header');
+  var onScroll = function(){ if(window.scrollY > 40){ header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); } };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  var toggle = document.getElementById('menuToggle'), nav = document.getElementById('mobileNav'),
+      overlay = document.getElementById('overlay'), closeBtn = document.getElementById('mobileClose');
+  function openMenu(){ nav.classList.add('open'); overlay.classList.add('show'); toggle.setAttribute('aria-expanded','true'); }
+  function closeMenu(){ nav.classList.remove('open'); overlay.classList.remove('show'); toggle.setAttribute('aria-expanded','false'); }
+  toggle.addEventListener('click', openMenu); closeBtn.addEventListener('click', closeMenu); overlay.addEventListener('click', closeMenu);
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+  document.querySelectorAll('img').forEach(function(img){ img.addEventListener('error', function(){ img.style.display='none'; }); });
+
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } }); }, {threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else { reveals.forEach(function(el){ el.classList.add('visible'); }); }
+</script>
+</body>
+</html>

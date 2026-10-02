@@ -1,0 +1,5 @@
+golaser-standalone.html
+golaser-artifact.html
+*.ps1
+Thumbs.db
+.DS_Store
